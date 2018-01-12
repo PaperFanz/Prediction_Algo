@@ -1,0 +1,25 @@
+<html>
+<head>
+  <title>PM Charting</title>
+  <style>
+    stop.begin { stop-color:lightyellow; }
+    stop.end { stop-color:lightgreen; }
+  </style>
+  <script  src='charting.js' language="javascript"></script>
+</head>
+
+<body>
+    <label>Mode:</label>
+    <select id="mode">
+     <option value="Shape">Shape</option>
+     <option value="Position">Position</option>
+     <option value="Velocity">Velocity</option>
+     <option value="Acceleration">Acceleration</option>
+    </select>
+    <label>Scale:</label>
+    <input id="scale" type=text value="1"></input>
+    <label>data</label><br>
+    <textarea id="data" cols="80" rows="10"></textarea><br>
+  <canvas id="Board" width="1000" height="500" class="clear" style="border:2px solid;float:left"  onclick="start_PM()"/>
+</body>
+</html>
